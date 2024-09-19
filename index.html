@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 
 <title>Wunderlust Travel</title>
+<link rel="stylesheet" href="styles.css">  
 
 </head>
 
@@ -22,12 +23,13 @@
 
     </picture> 
 
-    <a href="#mainContent" id="skipLink">Skip to main content</a>
+    <a class="skip-link" href='#main'>Skip to content
+    </a> 
 
     <h1>Wunderlust Travel</h1>
 
     <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
-    
+
         <nav>
             <ul>
                 <li> <a href="#Destinations">Destinations</a></li>
@@ -41,58 +43,64 @@
 
 <main id="main">
 
-<section id="Destinations">
-    <h2>Majorca</h2>
+    <div id="Destinations">
+        <h2>Majorca</h2>
 
-    <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
+        <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
+
+        <div id="squareImages-Grid">
+
+            <picture> 
+
+                <source media="(min-width: 1024px)" srcset="images/majorca-waves-L.png">
+                
+                <source media="(min-width: 780px)" srcset="images/majorca-waves-M.png">
+
+                <source media="(min-width: 320px)" srcset="images/majorca-waves-S.png">
+                
+                <img src="images/majorca-waves-S.png" alt="blue waves on the cliffs of Majorca island"> 
+                
+            </picture>
+            
+            <picture> 
+
+                <source media="(min-width: 1024px)" srcset="images/majorca-beach-L.png">
+
+                <source media="(min-width: 780px)" srcset="images/majorca-beach-M.png">
+
+                <source media="(min-width: 320px)" srcset="images/majorca-beach-S.png"> 
+                
+                <img src="images/majorca-beach-S.png" alt="beach with golden sand on majorca island"> 
+                
+            </picture>
+
+        </div>
+
+        <div id="panoramaImage-Grid">
+
+            <picture> 
+
+                <source media="(min-width: 1024px)" srcset="images/majorca-cove-L.png">
+
+                <source media="(min-width: 780px)" srcset="images/majorca-cove-M.png">
+
+                <source media="(min-width: 320px)" srcset="images/majorca-cove-S.png"> 
+
+            
+                <img src="images/majorca-cove-S.png" alt="cove surrounded by green foliage on Majorca island"> 
+                
+            </picture>
+
+        </div>
+
+    </div>
 
 
-    <picture> 
-
-        <source media="(min-width: 1024px)" srcset="images/majorca-waves-L.png">
-        
-        <source media="(min-width: 780px)" srcset="images/majorca-waves-M.png">
-
-        <source media="(min-width: 320px)" srcset="images/majorca-waves-S.png">
-        
-        <img src="images/majorca-waves-S.png" alt="blue waves on the cliffs of Majorca island"> 
-        
-    </picture>
-        
-    <picture> 
-
-        <source media="(min-width: 1024px)" srcset="images/majorca-beach-L.png">
-
-        <source media="(min-width: 780px)" srcset="images/majorca-beach-M.png">
-
-        <source media="(min-width: 320px)" srcset="images/majorca-beach-S.png"> 
-        
-        <img src="images/majorca-beach-S.png" alt="beach with golden sand on majorca island"> 
-        
-    </picture>
-
-    <picture> 
-
-        <source media="(min-width: 1024px)" srcset="images/majorca-cove-L.png">
-
-        <source media="(min-width: 780px)" srcset="images/majorca-cove-M.png">
-
-        <source media="(min-width: 320px)" srcset="images/majorca-cove-S.png"> 
-
-       
-        <img src="images/majorca-cove-S.png" alt="cove surrounded by green foliage on Majorca island"> 
-        
-    </picture>
-
-    </section>
-
-
-</section>
-
-<section id="planYourTrip">
     <h3>Plan Your Trip</h3>
+    <div id="planYourTrip">
 
     <section id="howToGetThere">
+      
     <h4>How to Get There</h4>
 
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -108,8 +116,6 @@
             <polyline points="9 6 15 12 9 18" />
           </svg></a>
           
-      
-
     </section>
 
     <section id="placesToStay">
@@ -174,11 +180,11 @@
           
     </section>
 
-</section>
-
-<section id="Inspirations">
+</div>
 
 <h3>Testimonials</h3>
+
+<div id="Inspirations">
 
     <section id="mirandaBlake">
         <h4>Miranda Blake</h4>
@@ -246,11 +252,10 @@
     <section id="carmenLorenzo">
         <h4>Carmen Lorenzo</h4>
 
-        <p>Traveling From: Madrid, Spain
-“Live, laugh, love-- everything you need in Majorca.”</p>
+     
 
 
-<picture> 
+    <picture> 
 
     <source media="(min-width: 1024px)" srcset="images/carmen-lorenzo-L.png">
 
@@ -262,16 +267,19 @@
 
     </picture> 
 
+    <p>Traveling From: Madrid, Spain
+        “Live, laugh, love-- everything you need in Majorca.”</p>
+
 
 
     </section>
 
-</section>
+</div>
 
 
-
-<section id="Special">
-    <h3>About Your Destination</h3>
+<h3>About Your Destination</h3>
+<div id="Special">
+    
 
     <section id="size">
         <h4>size</h4>
@@ -331,7 +339,7 @@
           <p>Population: 923,608</p>
     </section>
 
-</section>
+</div>
 
 
 <section id="contactUs"> 
@@ -341,7 +349,7 @@
 
     <label for= "firstName">First Name<span class="required">*</span></label>  
     <input type="text" name="firstName" id="firstName" required>   
-
+    <br>
     <label for= "lastName">Last Name<span class="required">*</span></label>  
     <input type="text" name="lastName" id="lastName" required>   
 
@@ -352,23 +360,23 @@
 
         <input type="radio" name="emailPref" id="emailPref"> 
         <label for="emailPref">Email</label> 
-
+        <br>
         <input type="radio" name="textPref" id="textPref"> 
         <label for="textPref">Text</label> 
-    
+        <br>
         <input type="radio" name="phonePref" id="phonePref">
         <label for="phonePref">Phone</label>
-    
+        <br>
         </fieldset>
 
      
     <label for="Email">Email:<span class="required">*</span></label>
     <input type="email" name="Email" id="Email" required>
-
+    <br>
 
     <label for="Phone">Phone:<span class="required">*</span></label>
     <input type="tel" name="Phone" id="Phone" required> 
-
+    <br>
 <label for="Destination">Destination<span class="required">*</span></label>
 
     <select id="Destination" name="Destination" required> 
@@ -383,7 +391,7 @@
         <option value="Tenerife">Tenerife</option>
         <option value="Valencia">Valencia</option>
     </select>
-
+    <br>
     <label for="travelTime">Travel Time<span class="required">*</span></label>
     <select id="travelTime" name="travelTime" required> 
 
@@ -394,11 +402,11 @@
         <option value="Summer">Summer</option>
         <option value="Flexible">Flexible</option>
     </select>
-
+    <br>
 
     <label for="comments">Comments:<span class="required">*</span></label>
     <textarea id="comments" name="comments" required></textarea>
-
+    <br>
     <input type="submit">
     
 </form>
@@ -411,7 +419,9 @@
 <footer>
 
 Copyright 2021 Wunderlust
+<br>
 Privacy Statement
+<br>
 Terms of Service
 
 </footer>
