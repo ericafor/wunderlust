@@ -2,3 +2,211 @@
 	color: #c71819;
 }
 
+
+
+.skip-link {
+    color: #2C3D55;
+    font-weight: 700;
+    left: 50%;
+    background-color: #2C3D55;
+    text-align: center; 
+    padding: 25px;
+    padding-left:30px;
+    margin:-99px;
+    padding-bottom: 45px;
+    padding-top: 100px;
+    margin-left: -80px;
+    position: absolute;
+    transform: translateY(-100%);
+  }
+  
+  .skip-link:hover {
+    transform: translateY(0%);
+    color: #EEF0EB;
+  }
+  .skip-link {
+    transition: transform 0.3s;
+  }
+
+
+
+
+  header{
+    background: #2C3D55;
+color: #EEF0EB;
+text-align: center;
+  }
+
+
+nav h2{
+
+    padding-top: 20px;}
+    
+    nav {
+        text-align:center;
+        padding-bottom: 35px;
+    background: #2C3D55;
+    }
+    
+    nav ul{
+    display: inline-block;
+    }
+    
+    h1 {
+    text-align: center;
+    color: #EEF0EB;
+    font-family: graphie;
+    }
+
+
+    #Destinations h2{
+
+
+        text-align: center;
+    }
+    
+    h2{
+    color: #2C3D55;
+    }
+    
+    body{
+    background: #2C3D55;
+    font-family: graphie;
+    }
+    
+    footer{color:white;
+    text-align:center;}
+    
+    main{
+    color: #2C3D55;
+    }
+    
+    main h2{
+    color: #2C3D55;
+    }
+    
+    .skip-link:focus {
+      transform: translateY(0%);
+    }
+
+
+    
+    #squareImages-Grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    }
+
+    #panoramaImage-Grid{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        margin-top:-175px;
+    }
+
+
+    #planYourTrip{
+
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    justify-items: center;
+
+    }
+
+   
+
+    #Inspirations{
+        
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    justify-items: center;
+
+    }
+
+    form{
+        display: block;
+        width: 300px;
+        padding: 1em;
+        margin: 0 auto;
+        color: #222;
+        font-size: 1.1em;
+    }
+
+#Special{
+
+    display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+    h3{
+        text-align: center;
+    }
+    
+    picture{
+        display:block;
+    }
+    
+    li{
+      display: block;
+      float: left; 
+    }
+    
+    a {
+      display: block;
+      padding: 20px;
+    text-decoration:none;
+    background-color: #EEF0EB;
+    color: #2C3D55;
+    }
+
+   
+    
+    nav ul li { 
+      display: inline-block; 
+    }  
+    
+    nav ul li a { 
+      display: block; 
+      padding: 10px 20px; 
+      text-decoration: none; 
+    } 
+    
+    
+    nav ul li + li { 
+      margin-left: 100px;
+    } 
+    
+    footer{
+    color: #FFFFFF;
+    }
+
+    #main{
+
+        background-color: #EEF0EB;
+
+    }
+
+
+    @media (min-width: 780px){
+
+        #panoramaImage-Grid{
+        
+            margin-top:-260px;
+        }
+    }
+
+
+    @media (min-width: 1024px){
+
+    #panoramaImage-Grid{
+    
+        margin-top:-325px;
+    }
+}
+    
