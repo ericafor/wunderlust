@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 
 <title>Wunderlust Travel</title>
+
 </head>
 
 <body>
 
 <header>
+    <picture>
 
-<h1>Wunderlust Travel</h1>
+        <source media="(min-width: 1024px)" srcset="images/logo-L.png">
 
-<p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
+        <source media="(min-width: 780px)" srcset="images/logo-M.png">
 
-<nav>
-<ul>
-    <li> <a href="#">Destinations</a></li>
-    <li><a href="#">Inspirations</a></li>
-    <li><a href="#">Special</a></li>
-    <li><a href="#contactUs">Contact Us</a></li>
-</ul>
+        <source media="(min-width: 320px)" srcset="images/logo-S.png"> 
+        
+        <img src="images/logo-S.png" alt="logo"> 
 
+    </picture>
 
-</nav>
+    <h1>Wunderlust Travel</h1>
+
+    <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
+
+        <nav>
+            <ul>
+                <li> <a href="#">Destinations</a></li>
+                <li><a href="#">Inspirations</a></li>
+                <li><a href="#">Special</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+
 </header>
 
 <main id="main">
@@ -64,8 +76,6 @@
         <source media="(min-width: 780px)" srcset="images/majorca-cove-M.png">
 
         <source media="(min-width: 320px)" srcset="images/majorca-cove-S.png"> 
-
-        
 
        
         <img src="images/majorca-cove-S.png" alt="cove surrounded by green foliage on Majorca island"> 
@@ -145,7 +155,7 @@
      
             <source media="(min-width: 320px)" srcset="images/miranda-blake-S (1).png"> 
              
-            <img src="images/miranda-blake-S (1).png" alt="cove surrounded by green foliage on Majorca island"> 
+            <img src="images/miranda-blake-S (1).png" alt="Miranda Blake"> 
             
         </picture>
 
@@ -165,7 +175,7 @@
     
             <source media="(min-width: 320px)" srcset="images/max-winter-S.png"> 
            
-            <img src="images/max-winter-S.png" alt="cove surrounded by green foliage on Majorca island"> 
+            <img src="images/max-winter-S.png" alt="Max Winter"> 
 
         </picture> 
 <br>
@@ -187,7 +197,7 @@
         
                 <source media="(min-width: 320px)" srcset="images/ines-villegoes-S.png"> 
                
-                <img src="images/ines-villegoes-S.png" alt="cove surrounded by green foliage on Majorca island"> 
+                <img src="images/ines-villegoes-S.png" alt="Ines Villegoes"> 
     
             </picture> 
 
@@ -202,6 +212,21 @@
 
         <p>Traveling From: Madrid, Spain
 “Live, laugh, love-- everything you need in Majorca.”</p>
+
+
+<picture> 
+
+    <source media="(min-width: 1024px)" srcset="images/carmen-lorenzo-L.png">
+
+        <source media="(min-width: 780px)" srcset="images/carmen-lorenzo-M.png">
+
+        <source media="(min-width: 320px)" srcset="images/carmen-lorenzo-S.png"> 
+       
+        <img src="images/carmen-lorenzo-S.png" alt="Carmen Lorenzo"> 
+
+    </picture> 
+
+
 
     </section>
 
@@ -300,15 +325,13 @@
     
         </fieldset>
 
-    
+     
     <label for="Email">Email:</label>
     <input type="email" name="Email" id="Email" required>
 
 
     <label for="Phone">Phone:</label>
     <input type="tel" name="Phone" id="Phone" required> 
-
-
 
 <label for="Destination">Destination<span class="required">*</span></label>
 
