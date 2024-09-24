@@ -194,19 +194,43 @@ nav h2{
 
 
     @media (min-width: 780px){
-
         #panoramaImage-Grid{
-        
             margin-top:-260px;
         }
     }
 
 
+    @media (max-width: 780px){
+
+        
+
+
+        }
+
+
+    
+
+
     @media (min-width: 1024px){
 
     #panoramaImage-Grid{
-    
         margin-top:-325px;
     }
+
+
+    @media (max-width: 1024px){
+
+
+
+
+
+    }
+
+       
+
+
+   
+
+
 }
     
